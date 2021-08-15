@@ -10,11 +10,11 @@ public class Aula37 {
         // Solicita a entrada de uma palavra ou frase
         System.out.print("Insira seu texto: ");
         texto = input.nextLine();
-        int szTexto = texto.length(); //szTexto = quantidade de caracteres do texto
+        int tamanhoTexto = texto.length(); //szTexto = quantidade de caracteres do texto
 
 
-        String[] y = new String[szTexto];
-        for(int i=0, j = szTexto -1; i<szTexto; ++i, --j){ //atribui a um vetor cada caractere
+        String[] y = new String[tamanhoTexto];
+        for(int i=0, j = tamanhoTexto -1; i<tamanhoTexto; ++i, --j){ //atribui a um vetor cada caractere
                                                             // do texto de trás para frente
             char result = texto.charAt(j);
             y[i] = Character.toString(result);
@@ -22,7 +22,7 @@ public class Aula37 {
         }
 
         texto = ""; //Limpa a string
-        for (int i = 0; i < szTexto; i++){ //Refaz a string com o texto invertido
+        for (int i = 0; i < tamanhoTexto; i++){ //Refaz a string com o texto invertido
             texto = texto + y[i];
         }
 
