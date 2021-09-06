@@ -28,13 +28,16 @@ public class Matriz {
 
         System.out.println();
         System.out.println("Numeros negativos");
+        int x = 0;
         for (int i=0; i<matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
+            for (int j = 0; j < matriz[i].length; j++) {
                 if (matriz[i][j] < 0) {
                     System.out.print(matriz[i][j] + " ");
+                    x++;
                 }
             }
         }
+        System.out.print("Total de números negativos: " + x);
         sc.close();
     }
 }
